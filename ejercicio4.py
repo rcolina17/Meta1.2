@@ -1,10 +1,16 @@
 #Biografia
-nombre=input('Cual es tu nombre')
-if nombre.isalpha():print (nombre)
-else:print('Solo se permiten letras')
+from datetime import datetime
 
-fechaN=input('Cual es tu fecha de nacimientos?')
+nombre=input('Cual es tu nombre '+'\n')
+if nombre.isalpha():
+    print ('Nombre: ',nombre)
+else:
+    print('Solo se permiten letras')
 
-direccion=input('Cual es tu Direccion?')
+fechaN=input('Cual es tu fecha de nacimiento? Dia/Mes/Año'+'\n')
+fechaN2=datetime.strptime(fechaN,'%d/%m/%Y')
+print ('Tu fecha de nacimiento es: ',fechaN)
+
+
 
 
