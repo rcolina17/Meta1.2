@@ -14,13 +14,14 @@ elif personas == 2:
     total=(pago*porcentaje)+pago
     print ('Total a pagar: ',total,)
     print ('Pagos de las personas')
-    persona1= int(input('Persona 1: '))
+    persona1= int(input('Cuanto porcentaje va a pagar la Persona 1: '+'\n'))
     x=persona1*.01
     porcentaje1 = total*x
+    
     persona2= int(input('Persona 2: '))
     w=persona2*.01
     porcentaje2 = total*w
-    print ('El pago es de: ',total ,'\nLa primera persona pago: ', x*100,'%', ' que es igual a ',porcentaje1, '\nLa segunda persona pago: ', w*100, '%',' que es igual a',porcentaje2)
+    print ('El pago es de: ',total ,'\nLa primera persona pago: ',porcentaje1, '\nLa segunda persona pago: ',porcentaje2)
 
 elif personas == 3:
     porcentaje = propina*.01
@@ -30,13 +31,15 @@ elif personas == 3:
     persona1= int(input('Persona 1: '))
     x=persona1*.01
     porcentaje1 = total*x
+    
     persona2= int(input('Persona 2: '))
     w=persona2*.01
     porcentaje2 = total*w
+    
     persona3= int(input('Persona 3: '))
     z=persona3*.01
     porcentaje2 = total*z
-    print ('El pago es de: ',total ,'\nLa primera persona pago: ', x*100,'%', ' que es igual a ',porcentaje1, '\nLa segunda persona pago: ', w*100, '%',' que es igual a',porcentaje2,'\nLa segunda persona pago: ', z*100, '%',' que es igual a',porcentaje3)
+    print ('El pago es de: ',total ,'\nLa primera persona pago: ',porcentaje1, '\nLa segunda persona pago: ',porcentaje2,'\nLa tercera persona pago: ',porcentaje3)
 
 
 
